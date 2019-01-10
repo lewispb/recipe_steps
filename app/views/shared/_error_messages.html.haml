@@ -1,0 +1,7 @@
+- if @step.errors.any?
+  .error-summary
+    .heading-medium.error-summary-heading
+      There #{'is'.pluralize(@step.errors.count)} #{pluralize(@step.errors.count, "error")} with the information you've provided.
+    %ul.error-summary-list
+      - @step.errors.messages.each do |element, message|
+        = link_to_input_with_error(element, message)

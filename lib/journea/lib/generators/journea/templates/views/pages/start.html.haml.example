@@ -1,0 +1,12 @@
+%body
+  .grid-row.start-page
+    .column-two-thirds
+      %header.text
+        %h1#groupLabel.form-title.heading-large
+          Start
+      %h2.heading-small Summary
+      %ul.list.list-bullet.text
+        %li Requirement 1
+        %li Requirement 2
+
+      = link_to 'Start now', journea.journeys_path, class: 'button button-start', role: 'button', method: :post

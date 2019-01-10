@@ -1,0 +1,8 @@
+.grid-row
+  .column-two-thirds
+    = simple_form_for @step do |f|
+      = render 'shared/error_messages'
+
+      %h1.heading-medium Publish
+
+      = f.button :submit, 'Continue'

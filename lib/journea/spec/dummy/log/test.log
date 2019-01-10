@@ -1,0 +1,448 @@
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/journey" for 127.0.0.1 at 2017-01-22 20:59:13 +0000
+Processing by Journea::JourneysController#create as HTML
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "journea_journeys" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", 2017-01-22 20:59:13 UTC], ["updated_at", 2017-01-22 20:59:13 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mJournea::JourneyTransition Load (0.2ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+Redirected to http://www.example.com/journey/1/steps/name/edit
+Completed 302 Found in 67ms (ActiveRecord: 2.8ms)
+  [1m[35m (0.8ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2017-01-22 20:59:13 +0000
+Processing by PagesController#start as HTML
+  Rendering pages/start.html.erb within layouts/application
+  Rendered pages/start.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 163ms (Views: 161.0ms | ActiveRecord: 0.0ms)
+Started POST "/journey/" for 127.0.0.1 at 2017-01-22 20:59:14 +0000
+Processing by Journea::JourneysController#create as HTML
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "journea_journeys" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", 2017-01-22 20:59:14 UTC], ["updated_at", 2017-01-22 20:59:14 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mJournea::JourneyTransition Load (0.1ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+Redirected to http://www.example.com/journey/1/steps/name/edit
+Completed 302 Found in 4ms (ActiveRecord: 0.5ms)
+Started GET "/journey/1/steps/name/edit" for 127.0.0.1 at 2017-01-22 20:59:14 +0000
+Processing by Journea::StepsController#edit as HTML
+  Parameters: {"journey_id"=>"1", "id"=>"name"}
+  [1m[36mJournea::Journey Load (0.1ms)[0m  [1m[34mSELECT  "journea_journeys".* FROM "journea_journeys" WHERE "journea_journeys"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mJournea::JourneyTransition Load (0.1ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mJournea::Keyvalue Load (0.1ms)[0m  [1m[34mSELECT "journea_keyvalues".* FROM "journea_keyvalues" WHERE 1=0 AND "journea_keyvalues"."journey_id" = 1[0m
+  Rendering steps/name.html.erb within layouts/application
+  Rendered steps/name.html.erb within layouts/application (64.7ms)
+Completed 200 OK in 85ms (Views: 72.5ms | ActiveRecord: 0.5ms)
+Started PATCH "/journey/1/steps/name" for 127.0.0.1 at 2017-01-22 20:59:14 +0000
+Processing by Journea::StepsController#update as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"Continue", "journey_id"=>"1", "id"=>"name"}
+  [1m[36mJournea::Journey Load (0.1ms)[0m  [1m[34mSELECT  "journea_journeys".* FROM "journea_journeys" WHERE "journea_journeys"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mJournea::JourneyTransition Load (0.1ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[33mUPDATE "journea_journey_transitions" SET "most_recent" = 'f' WHERE "journea_journey_transitions"."journey_id" = ?[0m  [["journey_id", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "journea_journey_transitions" ("to_state", "metadata", "sort_key", "journey_id", "most_recent", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["to_state", "address"], ["metadata", "{\"previous_state\":\"name\"}"], ["sort_key", 10], ["journey_id", 1], ["most_recent", true], ["created_at", 2017-01-22 20:59:14 UTC], ["updated_at", 2017-01-22 20:59:14 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mJournea::JourneyTransition Load (0.1ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+Redirected to http://www.example.com/journey/1/steps/address/edit
+Completed 302 Found in 28ms (ActiveRecord: 1.1ms)
+Started GET "/journey/1/steps/address/edit" for 127.0.0.1 at 2017-01-22 20:59:14 +0000
+Processing by Journea::StepsController#edit as HTML
+  Parameters: {"journey_id"=>"1", "id"=>"address"}
+  [1m[36mJournea::Journey Load (0.0ms)[0m  [1m[34mSELECT  "journea_journeys".* FROM "journea_journeys" WHERE "journea_journeys"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mJournea::JourneyTransition Load (0.1ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mJournea::Keyvalue Load (0.1ms)[0m  [1m[34mSELECT "journea_keyvalues".* FROM "journea_keyvalues" WHERE "journea_keyvalues"."key" IN ('address_line_1', 'address_line_2') AND "journea_keyvalues"."journey_id" = 1[0m
+  Rendering steps/address.html.erb within layouts/application
+  Rendered steps/address.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 12ms (Views: 8.8ms | ActiveRecord: 0.2ms)
+  [1m[35m (1.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/journey" for 127.0.0.1 at 2017-01-22 22:13:42 +0000
+Processing by Journea::JourneysController#create as HTML
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "journea_journeys" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", 2017-01-22 22:13:42 UTC], ["updated_at", 2017-01-22 22:13:42 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mJournea::JourneyTransition Load (0.1ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+Redirected to http://www.example.com/journey/1/steps/name/edit
+Completed 302 Found in 60ms (ActiveRecord: 2.8ms)
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2017-01-22 22:13:42 +0000
+Processing by PagesController#start as HTML
+  Rendering pages/start.html.erb within layouts/application
+  Rendered pages/start.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 142ms (Views: 140.2ms | ActiveRecord: 0.0ms)
+Started POST "/journey/" for 127.0.0.1 at 2017-01-22 22:13:43 +0000
+Processing by Journea::JourneysController#create as HTML
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "journea_journeys" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", 2017-01-22 22:13:43 UTC], ["updated_at", 2017-01-22 22:13:43 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mJournea::JourneyTransition Load (0.1ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+Redirected to http://www.example.com/journey/1/steps/name/edit
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+Started GET "/journey/1/steps/name/edit" for 127.0.0.1 at 2017-01-22 22:13:43 +0000
+Processing by Journea::StepsController#edit as HTML
+  Parameters: {"journey_id"=>"1", "id"=>"name"}
+  [1m[36mJournea::Journey Load (0.1ms)[0m  [1m[34mSELECT  "journea_journeys".* FROM "journea_journeys" WHERE "journea_journeys"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mJournea::JourneyTransition Load (0.1ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mJournea::Keyvalue Load (0.1ms)[0m  [1m[34mSELECT "journea_keyvalues".* FROM "journea_keyvalues" WHERE 1=0 AND "journea_keyvalues"."journey_id" = 1[0m
+  Rendering steps/name.html.erb within layouts/application
+  Rendered steps/name.html.erb within layouts/application (67.5ms)
+Completed 200 OK in 87ms (Views: 75.6ms | ActiveRecord: 0.5ms)
+Started PATCH "/journey/1/steps/name" for 127.0.0.1 at 2017-01-22 22:13:43 +0000
+Processing by Journea::StepsController#update as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"Continue", "journey_id"=>"1", "id"=>"name"}
+  [1m[36mJournea::Journey Load (0.1ms)[0m  [1m[34mSELECT  "journea_journeys".* FROM "journea_journeys" WHERE "journea_journeys"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mJournea::JourneyTransition Load (0.1ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[33mUPDATE "journea_journey_transitions" SET "most_recent" = 'f' WHERE "journea_journey_transitions"."journey_id" = ?[0m  [["journey_id", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "journea_journey_transitions" ("to_state", "metadata", "sort_key", "journey_id", "most_recent", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["to_state", "address"], ["metadata", "{\"previous_state\":\"name\"}"], ["sort_key", 10], ["journey_id", 1], ["most_recent", true], ["created_at", 2017-01-22 22:13:43 UTC], ["updated_at", 2017-01-22 22:13:43 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mJournea::JourneyTransition Load (0.1ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+Redirected to http://www.example.com/journey/1/steps/address/edit
+Completed 302 Found in 27ms (ActiveRecord: 1.2ms)
+Started GET "/journey/1/steps/address/edit" for 127.0.0.1 at 2017-01-22 22:13:43 +0000
+Processing by Journea::StepsController#edit as HTML
+  Parameters: {"journey_id"=>"1", "id"=>"address"}
+  [1m[36mJournea::Journey Load (0.0ms)[0m  [1m[34mSELECT  "journea_journeys".* FROM "journea_journeys" WHERE "journea_journeys"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mJournea::JourneyTransition Load (0.1ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mJournea::Keyvalue Load (0.1ms)[0m  [1m[34mSELECT "journea_keyvalues".* FROM "journea_keyvalues" WHERE "journea_keyvalues"."key" IN ('address_line_1', 'address_line_2') AND "journea_keyvalues"."journey_id" = 1[0m
+  Rendering steps/address.html.erb within layouts/application
+  Rendered steps/address.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 13ms (Views: 9.4ms | ActiveRecord: 0.2ms)
+  [1m[35m (1.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/journey" for 127.0.0.1 at 2017-01-22 22:14:00 +0000
+Processing by Journea::JourneysController#create as HTML
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "journea_journeys" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", 2017-01-22 22:14:00 UTC], ["updated_at", 2017-01-22 22:14:00 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mJournea::JourneyTransition Load (0.1ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+Redirected to http://www.example.com/journey/1/steps/name/edit
+Completed 302 Found in 60ms (ActiveRecord: 2.9ms)
+  [1m[35m (1.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2017-01-22 22:14:00 +0000
+Processing by PagesController#start as HTML
+  Rendering pages/start.html.erb within layouts/application
+  Rendered pages/start.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 134ms (Views: 132.7ms | ActiveRecord: 0.0ms)
+Started POST "/journey/" for 127.0.0.1 at 2017-01-22 22:14:00 +0000
+Processing by Journea::JourneysController#create as HTML
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "journea_journeys" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", 2017-01-22 22:14:00 UTC], ["updated_at", 2017-01-22 22:14:00 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mJournea::JourneyTransition Load (0.1ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+Redirected to http://www.example.com/journey/1/steps/name/edit
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+Started GET "/journey/1/steps/name/edit" for 127.0.0.1 at 2017-01-22 22:14:00 +0000
+Processing by Journea::StepsController#edit as HTML
+  Parameters: {"journey_id"=>"1", "id"=>"name"}
+  [1m[36mJournea::Journey Load (0.1ms)[0m  [1m[34mSELECT  "journea_journeys".* FROM "journea_journeys" WHERE "journea_journeys"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mJournea::JourneyTransition Load (0.1ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mJournea::Keyvalue Load (0.0ms)[0m  [1m[34mSELECT "journea_keyvalues".* FROM "journea_keyvalues" WHERE 1=0 AND "journea_keyvalues"."journey_id" = 1[0m
+  Rendering steps/name.html.erb within layouts/application
+  Rendered steps/name.html.erb within layouts/application (68.4ms)
+Completed 200 OK in 87ms (Views: 76.3ms | ActiveRecord: 0.4ms)
+Started PATCH "/journey/1/steps/name" for 127.0.0.1 at 2017-01-22 22:14:00 +0000
+Processing by Journea::StepsController#update as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"Continue", "journey_id"=>"1", "id"=>"name"}
+  [1m[36mJournea::Journey Load (0.1ms)[0m  [1m[34mSELECT  "journea_journeys".* FROM "journea_journeys" WHERE "journea_journeys"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mJournea::JourneyTransition Load (0.1ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[33mUPDATE "journea_journey_transitions" SET "most_recent" = 'f' WHERE "journea_journey_transitions"."journey_id" = ?[0m  [["journey_id", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "journea_journey_transitions" ("to_state", "metadata", "sort_key", "journey_id", "most_recent", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["to_state", "address"], ["metadata", "{\"previous_state\":\"name\"}"], ["sort_key", 10], ["journey_id", 1], ["most_recent", true], ["created_at", 2017-01-22 22:14:00 UTC], ["updated_at", 2017-01-22 22:14:00 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mJournea::JourneyTransition Load (0.1ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+Redirected to http://www.example.com/journey/1/steps/address/edit
+Completed 302 Found in 24ms (ActiveRecord: 1.1ms)
+Started GET "/journey/1/steps/address/edit" for 127.0.0.1 at 2017-01-22 22:14:00 +0000
+Processing by Journea::StepsController#edit as HTML
+  Parameters: {"journey_id"=>"1", "id"=>"address"}
+  [1m[36mJournea::Journey Load (0.0ms)[0m  [1m[34mSELECT  "journea_journeys".* FROM "journea_journeys" WHERE "journea_journeys"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mJournea::JourneyTransition Load (0.1ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mJournea::Keyvalue Load (0.1ms)[0m  [1m[34mSELECT "journea_keyvalues".* FROM "journea_keyvalues" WHERE "journea_keyvalues"."key" IN ('address_line_1', 'address_line_2') AND "journea_keyvalues"."journey_id" = 1[0m
+  Rendering steps/address.html.erb within layouts/application
+  Rendered steps/address.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 13ms (Views: 9.5ms | ActiveRecord: 0.2ms)
+  [1m[35m (1.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started POST "/journey" for 127.0.0.1 at 2017-01-22 22:29:26 +0000
+Processing by Journea::JourneysController#create as HTML
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "journea_journeys" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", 2017-01-22 22:29:26 UTC], ["updated_at", 2017-01-22 22:29:26 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mJournea::JourneyTransition Load (0.2ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+Redirected to http://www.example.com/journey/1/steps/name/edit
+Completed 302 Found in 61ms (ActiveRecord: 3.4ms)
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2017-01-22 22:29:26 +0000
+Processing by PagesController#start as HTML
+  Rendering pages/start.html.erb within layouts/application
+  Rendered pages/start.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 137ms (Views: 135.3ms | ActiveRecord: 0.0ms)
+Started POST "/journey/" for 127.0.0.1 at 2017-01-22 22:29:26 +0000
+Processing by Journea::JourneysController#create as HTML
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "journea_journeys" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", 2017-01-22 22:29:26 UTC], ["updated_at", 2017-01-22 22:29:26 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mJournea::JourneyTransition Load (0.1ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+Redirected to http://www.example.com/journey/1/steps/name/edit
+Completed 302 Found in 4ms (ActiveRecord: 0.4ms)
+Started GET "/journey/1/steps/name/edit" for 127.0.0.1 at 2017-01-22 22:29:26 +0000
+Processing by Journea::StepsController#edit as HTML
+  Parameters: {"journey_id"=>"1", "id"=>"name"}
+  [1m[36mJournea::Journey Load (0.1ms)[0m  [1m[34mSELECT  "journea_journeys".* FROM "journea_journeys" WHERE "journea_journeys"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mJournea::JourneyTransition Load (0.2ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mJournea::Keyvalue Load (0.1ms)[0m  [1m[34mSELECT "journea_keyvalues".* FROM "journea_keyvalues" WHERE 1=0 AND "journea_keyvalues"."journey_id" = 1[0m
+  Rendering steps/name.html.erb within layouts/application
+  Rendered steps/name.html.erb within layouts/application (72.3ms)
+Completed 200 OK in 96ms (Views: 80.9ms | ActiveRecord: 0.6ms)
+Started PATCH "/journey/1/steps/name" for 127.0.0.1 at 2017-01-22 22:29:26 +0000
+Processing by Journea::StepsController#update as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"Continue", "journey_id"=>"1", "id"=>"name"}
+  [1m[36mJournea::Journey Load (0.1ms)[0m  [1m[34mSELECT  "journea_journeys".* FROM "journea_journeys" WHERE "journea_journeys"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mJournea::JourneyTransition Load (0.1ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[33mUPDATE "journea_journey_transitions" SET "most_recent" = 'f' WHERE "journea_journey_transitions"."journey_id" = ?[0m  [["journey_id", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "journea_journey_transitions" ("to_state", "metadata", "sort_key", "journey_id", "most_recent", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["to_state", "address"], ["metadata", "{\"previous_state\":\"name\"}"], ["sort_key", 10], ["journey_id", 1], ["most_recent", true], ["created_at", 2017-01-22 22:29:26 UTC], ["updated_at", 2017-01-22 22:29:26 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mJournea::JourneyTransition Load (0.1ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+Redirected to http://www.example.com/journey/1/steps/address/edit
+Completed 302 Found in 25ms (ActiveRecord: 1.1ms)
+Started GET "/journey/1/steps/address/edit" for 127.0.0.1 at 2017-01-22 22:29:26 +0000
+Processing by Journea::StepsController#edit as HTML
+  Parameters: {"journey_id"=>"1", "id"=>"address"}
+  [1m[36mJournea::Journey Load (0.0ms)[0m  [1m[34mSELECT  "journea_journeys".* FROM "journea_journeys" WHERE "journea_journeys"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mJournea::JourneyTransition Load (0.1ms)[0m  [1m[34mSELECT  "journea_journey_transitions".* FROM "journea_journey_transitions" WHERE "journea_journey_transitions"."journey_id" = ? ORDER BY "journea_journey_transitions"."sort_key" DESC LIMIT ?[0m  [["journey_id", 1], ["LIMIT", 1]]
+  [1m[36mJournea::Keyvalue Load (0.1ms)[0m  [1m[34mSELECT "journea_keyvalues".* FROM "journea_keyvalues" WHERE "journea_keyvalues"."key" IN ('address_line_1', 'address_line_2') AND "journea_keyvalues"."journey_id" = 1[0m
+  Rendering steps/address.html.erb within layouts/application
+  Rendered steps/address.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 15ms (Views: 11.0ms | ActiveRecord: 0.2ms)
+  [1m[35m (1.4ms)[0m  [1m[31mrollback transaction[0m

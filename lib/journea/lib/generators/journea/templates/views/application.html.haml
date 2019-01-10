@@ -1,0 +1,20 @@
+- content_for(:head) do
+  = stylesheet_link_tag "application", media: "all"
+  /[if IE 8] <haml_loud> stylesheet_link_tag &quot;ie8&quot; </haml_loud>
+  = javascript_include_tag "application"
+  = csrf_meta_tags
+- content_for :header_class, 'with-proposition'
+- content_for :proposition_header do
+  .header-proposition
+    .content
+      %nav#proposition-menu
+        = link_to t('global_proposition_header'), '/', id: "proposition-name"
+- content_for(:content) do
+  %main#content{:role => "main"}
+    = yield :datashift_journey_state_jumper
+    .phase-banner-alpha
+      %p
+        %strong.phase-tag= t(".proof_of_concept")
+    = render 'back_link'
+    = yield
+= render template: "layouts/govuk_template"
